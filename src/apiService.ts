@@ -181,7 +181,8 @@ export async function getTbs(bduss: string): Promise<string> {
  */
 export async function signTieba(bduss: string, tiebaName: string, tbs: string, index: number): Promise<SignResult> {
   return withRetry(async () => {
-    const url = 'https://tieba.baidu.com/sign/add';
+    // const url = 'https://tieba.baidu.com/sign/add';
+    const url = 'https://c.tieba.baidu.com/c/c/forum/sign';
     const headers = {
       'Cookie': `BDUSS=${bduss}`,
       'Accept': 'application/json, text/javascript, */*; q=0.01',
