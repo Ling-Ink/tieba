@@ -171,7 +171,8 @@ function getTbs(bduss) {
 function signTieba(bduss, tiebaName, tbs, index) {
     return __awaiter(this, void 0, void 0, function* () {
         return withRetry(() => __awaiter(this, void 0, void 0, function* () {
-            const url = 'https://tieba.baidu.com/sign/add';
+            // const url = 'https://tieba.baidu.com/sign/add';
+            const url = 'https://c.tieba.baidu.com/c/c/forum/sign';
             const headers = {
                 'Cookie': `BDUSS=${bduss}`,
                 'Accept': 'application/json, text/javascript, */*; q=0.01',
